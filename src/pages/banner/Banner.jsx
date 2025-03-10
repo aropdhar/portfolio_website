@@ -30,6 +30,36 @@ const Banner = () => {
         reset: true, // Resets the animation when scrolling back
       });
     }, []);
+    useEffect(() => {
+      ScrollReveal().reveal(".project", {
+        delay: 400,
+        distance: "50px",
+        origin: "left",
+        duration: 800,
+        easing: "ease-in-out",
+        reset: true, // Resets the animation when scrolling back
+      });
+    }, []);
+    useEffect(() => {
+      ScrollReveal().reveal(".context", {
+        delay: 400,
+        distance: "50px",
+        origin: "bottom",
+        duration: 800,
+        easing: "ease-in-out",
+        reset: true, // Resets the animation when scrolling back
+      });
+    }, []);
+    useEffect(() => {
+      ScrollReveal().reveal(".social", {
+        delay: 400,
+        distance: "50px",
+        origin: "top",
+        duration: 800,
+        easing: "ease-in-out",
+        reset: true, // Resets the animation when scrolling back
+      });
+    }, []);
   return (
     <div className='mt-[120px]'>
        <div className='container'>
@@ -59,19 +89,20 @@ const Banner = () => {
                     </div>
                 </div>
                 <div className='flex mt-[10px] items-center gap-x-[15px]'>
-                  <div className='flex bg-blue-900 py-[8px] px-[15px] shadow-regal-blue rounded-[5px] text-[18px] items-center gap-x-[10px] text-white cursor-pointer'>
-                    <a href="#" className='flex items-center gap-x-[10px]'>Project</a>
-                    <CiShare1 />
+                  <div className='flex bg-blue-900 shadow-lg shadow-blue-900/50 py-[8px] px-[15px]  rounded-[5px] text-[18px] items-center gap-x-[10px] text-white cursor-pointer transition-transform duration-300 ease-in-out transform hover:scale-110  group project'>
+                    <a href="#" className='flex items-center gap-x-[10px] '>Project</a>
+                    <span className="inline-block transition-transform duration-300 ease-in-out group-hover:translate-x-2"><CiShare1 /></span>
                   </div>
-                    <div className='flex bg-blue-900 py-[8px] px-[15px] shadow-regal-blue rounded-[5px] text-[18px] items-center gap-x-[10px] text-white cursor-pointer'>
+                    <div className='flex bg-blue-900 shadow-lg shadow-blue-900/50 py-[8px] px-[15px]  rounded-[5px] text-[18px] items-center gap-x-[10px] text-white cursor-pointer group context transition-transform duration-300 ease-in-out transform hover:scale-110'>
                         <a href="#"  target="_blank" className='flex items-center gap-x-[10px]'>Context </a>
-                        <BiBookContent />
+                        
+                        <span className="inline-block transition-transform duration-300 ease-in-out group-hover:translate-x-2"><BiBookContent /></span>
                     </div>
                 </div>
-                <div className='flex items-center gap-x-[10px]'>
-                    <a className='bg-blue-400 p-[7px] rounded-[10px] text-[20px] text-white'  target="_blank" href="https://github.com/aropdhar"><FaGithub /></a>
-                    <a className='bg-blue-400 p-[7px] rounded-[10px] text-[20px] text-white'  target="_blank" href="https://www.linkedin.com/in/arop-dhar-81b614219?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><FaLinkedin /></a>
-                    <a className='bg-blue-400 p-[7px] rounded-[10px] text-[20px] text-white' href="#"  target="_blank"><FaInstagram /></a>
+                <div className='flex items-center gap-x-[10px] social'>
+                    <a className='bg-blue-500 shadow-lg shadow-blue-500/50 p-[7px] rounded-[10px] text-[20px] text-white'  target="_blank" href="https://github.com/aropdhar"><FaGithub /></a>
+                    <a className='bg-blue-500 shadow-lg shadow-blue-500/50 p-[7px] rounded-[10px] text-[20px] text-white'  target="_blank" href="https://www.linkedin.com/in/arop-dhar-81b614219?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><FaLinkedin /></a>
+                    <a className='bg-blue-500 shadow-lg shadow-blue-500/50 p-[7px] rounded-[10px] text-[20px] text-white' href="#"  target="_blank"><FaInstagram /></a>
                 </div>
               </div>
               <div className='w-[650px] h-[350px] overflow-hidden image'>
