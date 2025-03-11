@@ -82,7 +82,7 @@ const About = () => {
         });
       }, []);
   return (
-    <div className='my-[120px]'>
+    <div className='my-[120px]' id='about'>
       <div className='container'>
         <div className='flex flex-col gap-y-[5px] items-center justify-center'>
             <Heading headtext='About Me' headclass='text-[40px] text-sky-500 font-semibold'/>

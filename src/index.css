@@ -20,6 +20,10 @@ ul,li,ol{
     list-style: none;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .container{
     width: 1250px;
     margin: 0 auto;

@@ -61,7 +61,7 @@ const Banner = () => {
       });
     }, []);
   return (
-    <div className='mt-[120px]'>
+    <div className='mt-[120px]' id="banner">
        <div className='container'>
           <div className='flex items-center justify-between'>
               <div className='flex flex-col gap-y-[10px] reveal'>

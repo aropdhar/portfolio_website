@@ -35,9 +35,9 @@ const Navbar = () => {
                <h1>Arop Dhar</h1>
             </div>
             <div className="flex items-center gap-x-[18px]">               
-                 <li className="MenuUnderline"><a href="#">Home</a></li>
-                 <li className="MenuUnderline"><a href="#">About</a></li>
-                 <li className="MenuUnderline"><a href="#">Portfolio</a></li>
+                 <li className="MenuUnderline"><a href="#banner">Home</a></li>
+                 <li className="MenuUnderline"><a href="#about">About</a></li>
+                 <li className="MenuUnderline"><a href="#portfolioshow">Portfolio</a></li>
                  <li className="MenuUnderline"><a href="#">Contact</a></li>               
             </div>
         </div>
