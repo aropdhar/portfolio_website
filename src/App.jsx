@@ -6,6 +6,7 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import Home from './pages/Home';
+import Details from './pages/details/Details';
 
 const App = () => {
 
@@ -13,6 +14,7 @@ const App = () => {
         createRoutesFromElements(
       <Route>
         <Route path='/' element={<Home/>}/>
+        <Route path='/details' element={<Details/>}/>
       </Route>
     )
   );

@@ -8,6 +8,7 @@ import React, { useEffect } from "react";
 import ScrollReveal from "scrollreveal";
 import { IoCode } from 'react-icons/io5'
 import { LiaCertificateSolid } from 'react-icons/lia'
+import profile from '../../assets/profile.jpg'
 
 const About = () => {
     useEffect(() => {
@@ -116,7 +117,11 @@ const About = () => {
                </div>
             </div>
             <div className='image'>
-              <span className='inline-block text-white font-normal bg-linear-to-r rounded-[50%] from-cyan-500 to-blue-500 bg-indigo-500 shadow-lg shadow-indigo-500/50 text-[260px]'><CgProfile /></span>
+              <div className='flex justify-center items-center text-white font-normal bg-linear-to-r rounded-[50%] from-cyan-500 to-blue-500 bg-indigo-500 shadow-lg shadow-indigo-500/50 w-[260px] h-[260px] '>
+              <div className='w-[240px]  h-[240px] overflow-hidden'>
+                <img className='w-full  rounded-[50%] h-full object-cover' src={profile} alt={profile} />
+              </div>
+              </div>
             </div>
         </div>
 
