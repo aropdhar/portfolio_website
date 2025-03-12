@@ -79,13 +79,13 @@ const PortfolioShow = () => {
       <div className='container'>
         {/* header section */}
             <div className='flex flex-col items-center justify-center gap-y-[10px] header'>
-                <h1 className='text-sky-500 text-4xl font-bold text-shadow-lg'>Portfolio Showcase</h1>
+                <h1 className='text-[40px] bg-gradient-to-r from-purple-400 via-pink-500 to-sky-500 bg-clip-text text-transparent'>Portfolio Showcase</h1>
                 <p className='w-[600px] text-center text-[18px] font-normal'>Explore my journey through projects, certifications, and technical expertise. Each section represents a milestone in my continuous leaming poth
                 </p>
             </div>
 
         {/* button section */}
-            <div className='flex mt-[40px] items-center justify-between bg-sky-400 p-[10px] rounded-[10px] button'>
+            <div className='flex mt-[40px] items-center justify-between bg-sky-400  shadow-lg shadow-sky-400/50 p-[10px] rounded-[10px] button'>
             <button className='flex flex-col gap-y-[4px] items-center justify-center w-[400px] p-[8px] cursor-pointer rounded-[8px] hover:bg-[rgba(245,245,245,0.68)] transition-transform ease-in-out transform duration-300 text-white hover:text-black text-[20px]' onClick={()=>setActiveSection("projects")}><IoIosCode /> Projects
             </button>
             <button className='flex flex-col gap-y-[4px] items-center justify-center w-[400px]  p-[8px] cursor-pointer rounded-[8px] hover:bg-[rgba(245,245,245,0.68)]   transition-transform ease-in-out transform text-white hover:text-black duration-300 text-[20px]' onClick={()=>setActiveSection("Certificate")}><LiaCertificateSolid /> Certificate

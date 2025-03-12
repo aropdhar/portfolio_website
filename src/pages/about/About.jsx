@@ -86,7 +86,7 @@ const About = () => {
     <div className='my-[120px]' id='about'>
       <div className='container'>
         <div className='flex flex-col gap-y-[5px] items-center justify-center'>
-            <Heading headtext='About Me' headclass='text-[40px] text-sky-500 font-semibold'/>
+            <Heading headtext='About Me' headclass='text-[40px] bg-gradient-to-r from-purple-400 via-pink-500 to-sky-500 bg-clip-text text-transparent'/>
             <div className='flex items-center gap-x-[10px]'>
                <span className='inline-block text-2xl'><GiButterflyFlower /></span> 
                <Paragraph paratext="Transforming ideas into digital experiences" paraclass="text-[18px] font-medium"/>
@@ -117,8 +117,8 @@ const About = () => {
                </div>
             </div>
             <div className='image'>
-              <div className='flex justify-center items-center text-white font-normal bg-linear-to-r rounded-[50%] from-cyan-500 to-blue-500 bg-indigo-500 shadow-lg shadow-indigo-500/50 w-[260px] h-[260px] '>
-              <div className='w-[240px]  h-[240px] overflow-hidden'>
+              <div className='flex justify-center items-center text-white font-normal bg-linear-to-r rounded-[50%] from-cyan-500 to-blue-500 bg-indigo-500 shadow-lg shadow-indigo-500/50 w-[300px] h-[300px] '>
+              <div className='w-[260px]  h-[260px] overflow-hidden'>
                 <img className='w-full  rounded-[50%] h-full object-cover' src={profile} alt={profile} />
               </div>
               </div>

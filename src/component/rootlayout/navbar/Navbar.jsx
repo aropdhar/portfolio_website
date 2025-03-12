@@ -38,7 +38,7 @@ const Navbar = () => {
                  <li className="MenuUnderline"><a href="#banner">Home</a></li>
                  <li className="MenuUnderline"><a href="#about">About</a></li>
                  <li className="MenuUnderline"><a href="#portfolioshow">Portfolio</a></li>
-                 <li className="MenuUnderline"><a href="#">Contact</a></li>               
+                 <li className="MenuUnderline"><a href="#contact">Contact</a></li>               
             </div>
         </div>
      </div>
