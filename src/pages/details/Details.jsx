@@ -26,7 +26,7 @@ const Details = () => {
                     <BreadCrump/>
                 </div>
               </div>
-              <h1 className='header'>Chatting_App</h1>
+              <h1 className='details'>Chatting_App</h1>
               <Paragraph paratext=" This is a real-time chatting app built using modern web technologies. 
               It allows users to send and receive messages instantly. 
               The backend is powered by Node.js and Express.js, ensuring fast communication. 
