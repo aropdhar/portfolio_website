@@ -174,6 +174,8 @@ const Contact2 = () => {
                 </div>
             </div>
         </div>
+
+        
     </>
   )
 }

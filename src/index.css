@@ -57,3 +57,18 @@ html {
 .MenuUnderline:hover::after{
     transform: scale(1);
 }
+
+.header{
+    position: relative;
+    font-size: 40px;
+}
+.header::after{
+    content:'';
+    width: 8%;
+    height: 5px;
+    position: absolute;
+    background: #5b4a99;
+    left: 0;
+    bottom: -10px;
+    border-radius: 20px
+}

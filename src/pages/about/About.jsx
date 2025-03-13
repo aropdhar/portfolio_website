@@ -126,7 +126,7 @@ const About = () => {
         </div>
 
         <div className='flex  items-center mt-[30px] justify-between'>
-           <div className='bg-blue-300 shadow-lg shadow-blue-500/50 flex items-start justify-between rounded-[15px] w-[400px] p-[10px] about1'>
+           <div className='bg-blue-300 transition-transform duration-300 ease-in-out cursor-pointer transform hover:scale-110  shadow-lg shadow-blue-500/50 flex items-start justify-between rounded-[15px] w-[400px] p-[10px] about1'>
             <div className='flex flex-col gap-y-[10px]'>
                 <span className='flex items-center justify-center itw w-[50px] text-[22px] rounded-[50%] h-[50px] bg-[rgba(245,245,245,0.68)] shadow-lg shadow-blue-500/50'><IoCode /></span>
                 <h4 className='text-[18px] font-semibold'>Total Project</h4>
@@ -136,7 +136,7 @@ const About = () => {
                 <span className='text-[35px]'>7</span>
              </div>
            </div>
-           <div className='bg-blue-300 shadow-lg shadow-blue-500/50 flex items-start justify-between rounded-[15px] w-[400px] p-[10px] about2'>
+           <div className='bg-blue-300 shadow-lg shadow-blue-500/50 flex items-start cursor-pointer transition-transform duration-300 ease-in-out transform hover:scale-110  justify-between rounded-[15px] w-[400px] p-[10px] about2'>
              <div className='flex flex-col gap-y-[10px]'>
                 <span className='flex items-center justify-center itw w-[50px] text-[22px] rounded-[50%] h-[50px] bg-[rgba(245,245,245,0.68)] shadow-lg shadow-blue-500/50'><LiaCertificateSolid /></span>
                 <h4 className='text-[18px] font-semibold'>Certificate</h4>
@@ -146,7 +146,7 @@ const About = () => {
                 <span className='text-[35px]'>3</span>
              </div>
            </div>
-           <div className='bg-blue-300 shadow-lg shadow-blue-500/50 flex items-start justify-between rounded-[15px] w-[400px] p-[10px] about3'>
+           <div className='bg-blue-300 transition-transform duration-300 ease-in-out transform hover:scale-110 cursor-pointer shadow-lg shadow-blue-500/50 flex items-start justify-between rounded-[15px] w-[400px] p-[10px] about3'>
               <div className='flex flex-col gap-y-[10px]'>
                <span className='flex items-center justify-center itw w-[50px] text-[22px] rounded-[50%] h-[50px] bg-[rgba(245,245,245,0.68)] shadow-lg shadow-blue-500/50'><LiaCertificateSolid /></span>
                <h4 className='text-[18px] font-semibold'>Years Of Experience</h4>

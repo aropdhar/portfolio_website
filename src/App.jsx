@@ -19,7 +19,7 @@ const App = () => {
              <Route element={<Rootlayout/>}>            
               <Route>
                 <Route path='/home' element={<Home/>}/>
-                <Route path='/details' element={<Details/>}/>
+                <Route path='/Chatting_app' element={<Details/>}/>
               </Route>
             </Route>
           </Route>

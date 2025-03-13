@@ -177,6 +177,9 @@ const Contact = () => {
             </div>
             </div>
         </div>
+        <div className='border-t-2 flex items-center justify-center border-[#0d1638] py-[15px]'>
+            <h1 className='text-[18px]'>© 2025 Arop Dhar. All rights reserved.</h1>
+        </div>
     </>
   )
 }

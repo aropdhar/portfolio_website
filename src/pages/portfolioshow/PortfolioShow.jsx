@@ -106,11 +106,11 @@ const PortfolioShow = () => {
                 <p>AutoChat odolnost sends charms to Discord channels in a safe manner.</p>
                 <div className='flex  items-center justify-between'>
                    <div className='flex cursor-pointer text-[18px] group items-center gap-x-[10px]'>
-                      <a href="#">Live Link</a>
+                      <a target='_blank' href="https://chattingsapp.netlify.app/">Live Link</a>
                       <span className='group-hover:translate-x-2 inline-block transform transition-transform duration-300 ease-in-out'><CiShare1 /></span>
                    </div>
                    <div className='flex gap-x-[2px] items-center bg-sky-400 text-[18px] py-[2px] px-[15px] group rounded-[5px] cursor-pointer font-semibold text-white'>
-                    <NavLink to={'/details'} className="inline-block items-center ">Details</NavLink>
+                    <NavLink to={'/Chatting_app'} className="inline-block items-center ">Details</NavLink>
                     <span className='inline-block font-bold group-hover:translate-x-2 transform transition-transform text-3xl duration-300 ease-in-out'><IoIosArrowRoundForward /></span>
                    </div>
                    
