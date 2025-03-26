@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from 'react'
 import Paragraph from '../../component/paragraph/Paragraph'
-import { MdOutlineCastConnected, MdOutlineMail } from 'react-icons/md'
+import { MdDelete, MdOutlineCastConnected, MdOutlineMail } from 'react-icons/md'
 import { LuUserRound } from 'react-icons/lu'
 import { FaRegMessage } from 'react-icons/fa6'
 import { FaGithub, FaInstagram, FaLocationArrow, FaRegComment } from 'react-icons/fa'
 import { CiLinkedin } from 'react-icons/ci'
 import { useFormik } from 'formik';
 import Comment from '../../validation/comment/Comment'
-import { getDatabase, push, ref, set , onValue} from "firebase/database";
+import { getDatabase, push, ref, set , onValue, remove} from "firebase/database";
 import { ToastContainer, toast } from 'react-toastify';
 import Contact2 from './Contact2'
 import ScrollReveal from "scrollreveal";
@@ -82,6 +82,12 @@ const Contact = () => {
           
         },
       });
+
+      const handledelete = (info) =>{
+        remove(ref(db, 'comments/' + info.id)).then(()=>{
+            toast('Deleted SuccessFully....!!!')
+        })
+      }
 
 
   return (
@@ -159,7 +165,8 @@ const Contact = () => {
                     
                         <div className='flex flex-col gap-y-[12px]'>
                         {commentarr.map((item,index)=>(
-                            <div key={index} className='flex p-[10px] rounded-[10px] bg-red-200  items-center gap-x-[10px]'>
+                        <div className='flex items-center justify-between rounded-[10px] bg-red-200'>
+                            <div key={index} className='flex p-[10px]   items-center gap-x-[10px]'>
                             <div className='w-[60px] h-[60px] overflow-hidden bg-amber-400 rounded-[50%]'>
                                 <img className='w-full h-full object-cover rounded-[50%] flex items-center justify-center' src={image} alt="Not found" />
                             </div>
@@ -168,6 +175,10 @@ const Contact = () => {
                                 <p className='truncate'>{item.Comment}</p>
                             </div>
                         </div> 
+                            <button className='text-[30px] cursor-pointer text-blue-400' onClick={()=>handledelete(item)}>
+                                <MdDelete />
+                            </button>
+                        </div>
                         ))
 
                         }                     

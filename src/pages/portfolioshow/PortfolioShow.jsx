@@ -12,6 +12,11 @@ import { FaCss3, FaNode, FaReact } from 'react-icons/fa'
 import { RiJavascriptFill, RiTailwindCssFill } from 'react-icons/ri'
 import { SiExpress, SiMongodb, SiVite } from 'react-icons/si'
 import { IoLogoFirebase } from 'react-icons/io5'
+import chatting from '../../assets/project1.png'
+import ecommerce from '../../assets/project2.png'
+import finsweet from  '../../assets/project3.png'
+import elearning from '../../assets/project4.png'
+import dashboard from '../../assets/project5.png'
 
 const PortfolioShow = () => {
     
@@ -99,7 +104,7 @@ const PortfolioShow = () => {
          <div className='my-[20px] flex-wrap flex gap-[16px] project'>
             <div className='p-[10px] rounded-[10px] w-[400px] bg-[rgba(101,23,147,0.12)] '>
                 <div className='w-[380px] h-[200px]  overflow-hidden'>
-                    <img className='w-full h-full rounded-[10px] object-cover' src={image} alt={image} />
+                    <img className='w-full h-full rounded-[10px] object-cover' src={chatting} alt={chatting} />
                 </div>
                 <div className='flex mt-[10px] flex-col gap-y-[8px]'>
                 <h1 className='text-[18px] font-semibold'>Chatting App</h1>
@@ -120,18 +125,18 @@ const PortfolioShow = () => {
 
             <div className='p-[10px] rounded-[10px] w-[400px] bg-[rgba(101,23,147,0.12)] '>
                 <div className='w-[380px] h-[200px]  overflow-hidden'>
-                    <img className='w-full h-full rounded-[10px] object-cover' src={image} alt={image} />
+                    <img className='w-full h-full rounded-[10px] object-cover' src={ecommerce} alt={ecommerce} />
                 </div>
                 <div className='flex mt-[10px] flex-col gap-y-[8px]'>
-                <h1 className='text-[18px] font-semibold'>Chatting App</h1>
-                <p>AutoChat odolnost sends charms to Discord channels in a safe manner.</p>
+                <h1 className='text-[18px] font-semibold'>E-Commerce FrontEnd</h1>
+                <p>An eCommerce website, likely built using modern web technologies for online shopping functionality.</p>
                 <div className='flex  items-center justify-between'>
                    <div className='flex cursor-pointer text-[18px] group items-center gap-x-[10px]'>
                       <a href="#">Live Link</a>
                       <span className='group-hover:translate-x-2 inline-block transform transition-transform duration-300 ease-in-out'><CiShare1 /></span>
                    </div>
                    <div className='flex gap-x-[2px] items-center bg-sky-400 text-[18px] py-[2px] px-[15px] group rounded-[5px] cursor-pointer font-semibold text-white'>
-                    <NavLink className="inline-block items-center ">Details</NavLink>
+                    <NavLink to={'/E-CommerceFrontend'} className="inline-block items-center ">Details</NavLink>
                     <span className='inline-block font-bold group-hover:translate-x-2 transform transition-transform duration-300 ease-in-out'><IoIosArrowRoundForward /></span>
                    </div>
                    
@@ -141,18 +146,19 @@ const PortfolioShow = () => {
 
             <div className='p-[10px] rounded-[10px] w-[400px] bg-[rgba(101,23,147,0.12)] '>
                 <div className='w-[380px] h-[200px]  overflow-hidden'>
-                    <img className='w-full h-full rounded-[10px] object-cover' src={image} alt={image} />
+                    <img className='w-full h-full rounded-[10px] object-cover' src={ecommerce} alt={ecommerce} />
                 </div>
                 <div className='flex mt-[10px] flex-col gap-y-[8px]'>
-                <h1 className='text-[18px] font-semibold'>Chatting App</h1>
-                <p>AutoChat odolnost sends charms to Discord channels in a safe manner.</p>
+                <h1 className='text-[18px] font-semibold'>E-Commerce Backend</h1>
+                <p>An eCommerce website, handling server-side logic, database management, and API functionality.
+                </p>
                 <div className='flex  items-center justify-between'>
                    <div className='flex cursor-pointer text-[18px] group items-center gap-x-[10px]'>
                       <a href="#">Live Link</a>
                       <span className='group-hover:translate-x-2 inline-block transform transition-transform duration-300 ease-in-out'><CiShare1 /></span>
                    </div>
                    <div className='flex gap-x-[2px] items-center bg-sky-400 text-[18px] py-[2px] px-[15px] group rounded-[5px] cursor-pointer font-semibold text-white'>
-                    <NavLink className="inline-block items-center ">Details</NavLink>
+                    <NavLink to={'/E-CommerceBackend'} className="inline-block items-center ">Details</NavLink>
                     <span className='inline-block font-bold group-hover:translate-x-2 transform transition-transform duration-300 ease-in-out'><IoIosArrowRoundForward /></span>
                    </div>
                    
@@ -162,18 +168,18 @@ const PortfolioShow = () => {
 
             <div className='p-[10px] rounded-[10px] w-[400px] bg-[rgba(101,23,147,0.12)] '>
                 <div className='w-[380px] h-[200px]  overflow-hidden'>
-                    <img className='w-full h-full rounded-[10px] object-cover' src={image} alt={image} />
+                    <img className='w-full h-full rounded-[10px] object-cover' src={finsweet} alt={finsweet} />
                 </div>
                 <div className='flex mt-[10px] flex-col gap-y-[8px]'>
-                <h1 className='text-[18px] font-semibold'>Chatting App</h1>
-                <p>AutoChat odolnost sends charms to Discord channels in a safe manner.</p>
+                <h1 className='text-[18px] font-semibold'>React Finsweet Project</h1>
+                <p>A React project, likely showcasing a web application built using React.js.</p>
                 <div className='flex  items-center justify-between'>
                    <div className='flex cursor-pointer text-[18px] group items-center gap-x-[10px]'>
                       <a href="#">Live Link</a>
                       <span className='group-hover:translate-x-2 inline-block transform transition-transform duration-300 ease-in-out'><CiShare1 /></span>
                    </div>
                    <div className='flex gap-x-[2px] items-center bg-sky-400 text-[18px] py-[2px] px-[15px] group rounded-[5px] cursor-pointer font-semibold text-white'>
-                    <NavLink className="inline-block items-center ">Details</NavLink>
+                    <NavLink to={'/finsweet'} className="inline-block items-center ">Details</NavLink>
                     <span className='inline-block font-bold group-hover:translate-x-2 transform transition-transform duration-300 ease-in-out'><IoIosArrowRoundForward /></span>
                    </div>
                    
@@ -183,18 +189,18 @@ const PortfolioShow = () => {
 
             <div className='p-[10px] rounded-[10px] w-[400px] bg-[rgba(101,23,147,0.12)] '>
                 <div className='w-[380px] h-[200px]  overflow-hidden'>
-                    <img className='w-full h-full rounded-[10px] object-cover' src={image} alt={image} />
+                    <img className='w-full h-full rounded-[10px] object-cover' src={elearning} alt={elearning} />
                 </div>
                 <div className='flex mt-[10px] flex-col gap-y-[8px]'>
-                <h1 className='text-[18px] font-semibold'>Chatting App</h1>
-                <p>AutoChat odolnost sends charms to Discord channels in a safe manner.</p>
+                <h1 className='text-[18px] font-semibold'>E-Learning</h1>
+                <p>E-learning is a digital learning method that uses online resources, courses, and technology facilitate.</p>
                 <div className='flex  items-center justify-between'>
                    <div className='flex cursor-pointer text-[18px] group items-center gap-x-[10px]'>
                       <a href="#">Live Link</a>
                       <span className='group-hover:translate-x-2 inline-block transform transition-transform duration-300 ease-in-out'><CiShare1 /></span>
                    </div>
                    <div className='flex gap-x-[2px] items-center bg-sky-400 text-[18px] py-[2px] px-[15px] group text-white rounded-[5px] cursor-pointer font-semibold '>
-                    <NavLink className="inline-block items-center ">Details</NavLink>
+                    <NavLink to={'/elearning'} className="inline-block items-center ">Details</NavLink>
                     <span className='inline-block font-bold group-hover:translate-x-2 transform transition-transform duration-300 ease-in-out'><IoIosArrowRoundForward /></span>
                    </div>
                    
@@ -203,18 +209,18 @@ const PortfolioShow = () => {
             </div>
             <div className='p-[10px] rounded-[10px] w-[400px] bg-[rgba(101,23,147,0.12)] '>
                 <div className='w-[380px] h-[200px]  overflow-hidden'>
-                    <img className='w-full h-full rounded-[10px] object-cover' src={image} alt={image} />
+                    <img className='w-full h-full rounded-[10px] object-cover' src={dashboard} alt={dashboard} />
                 </div>
                 <div className='flex mt-[10px] flex-col gap-y-[8px]'>
-                <h1 className='text-[18px] font-semibold'>Chatting App</h1>
-                <p>AutoChat odolnost sends charms to Discord channels in a safe manner.</p>
+                <h1 className='text-[18px] font-semibold'>DashBoard</h1>
+                <p>This Netlify link hosts a deployed dashboard project, likely designed for task management or data.</p>
                 <div className='flex  items-center justify-between'>
                    <div className='flex cursor-pointer text-[18px] group items-center gap-x-[10px]'>
                       <a href="#">Live Link</a>
                       <span className='group-hover:translate-x-2 inline-block transform transition-transform duration-300 ease-in-out'><CiShare1 /></span>
                    </div>
                    <div className='flex gap-x-[2px] items-center bg-sky-400 text-[18px] text-white py-[2px] px-[15px] group rounded-[5px] cursor-pointer font-semibold'>
-                    <NavLink className="inline-block items-center ">Details</NavLink>
+                    <NavLink to={'/dashboard'} className="inline-block items-center ">Details</NavLink>
                     <span className='inline-block font-bold group-hover:translate-x-2 transform transition-transform duration-300 ease-in-out'><IoIosArrowRoundForward /></span>
                    </div>
                    

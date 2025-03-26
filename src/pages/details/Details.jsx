@@ -9,7 +9,8 @@ import { MdOutlineCode } from 'react-icons/md'
 import { IoCodeSlash, IoLogoFirebase, IoLogoJavascript } from 'react-icons/io5'
 import { RiReactjsFill, RiStopLargeFill, RiTailwindCssFill } from 'react-icons/ri'
 import { SiReactrouter } from 'react-icons/si'
-import banner from '../../assets/p1.jpg'
+import chatting from '../../assets/project1.png'
+
 
 const Details = () => {
   return (
@@ -78,7 +79,7 @@ const Details = () => {
             </div>
             <div className='flex mt-[40px] flex-col items-center gap-y-[20px]'>
                <div className='w-[450px] h-[250px] overflow-hidden'>
-                  <img className='w-full h-full rounded-[20px] object-cover' src={banner} alt={banner}/>
+                  <img className='w-full h-full rounded-[20px] object-cover' src={chatting} alt={chatting}/>
                </div>
                <div className='bg-[#09061b] flex flex-col gap-y-[12px] w-[450px] rounded-[20px] p-[15px]'>
                 <div className='flex font-bold text-[18px] items-center gap-x-[8px] text-white'>
